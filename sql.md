@@ -67,7 +67,19 @@ COMMANDS USED:
     -DELETE A ROW FROM A TABLE
         DELETE FROM employees; (wrong approach, will delete all the rows)
         DELETE FROM employees WHERE employee_id = 6; (done)
-        
+
+# Autocommit, commit, rollback
+    Autocommit is ON by default
+    Lets turn it to OFF, after we turn it off we have to manually save each transaction, creates a save point
+        SET AUTOCOMMIT = OFF;
+    Lets create a SAVE POINT using COMMIT keyword
+        COMMIT;
+    Now delete all info within the table
+        DELETE FROM employees;
+    Now lets undo the changes
+        ROLLBACK; (COMMIT the last one)
+        SELECT * FROM employees
+
 
 
 
