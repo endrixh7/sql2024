@@ -80,6 +80,23 @@ COMMANDS USED:
         ROLLBACK; (COMMIT the last one)
         SELECT * FROM employees
 
+# Current Date and Current Time
+
+    - DATE
+    - TIME
+    - DATETIME
+    - CURRENT_DATE() , +1 or -1
+    - CURRENT_TIME() , NOW()
+
+# Unique Constraint
+
+    All Values in a COLUMN are different
+    - We set that the data type in UNIQUE and cannot be assigned anywhere
+    - Can be created during the TABLE creation
+    - or can be added later after the TABLE is been created, ADD CONSTRAINT UNIQUE
+    - duplicate index/duplicate entry
+
+# NOT NULL
 
 
 
